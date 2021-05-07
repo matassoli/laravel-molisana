@@ -13,30 +13,70 @@
 
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="{{ asset('images/marchio-sito-test.png') }}" alt="Logo La Molisana">
-            </div>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="{{ asset('images/marchio-sito-test.png') }}" alt="Logo La Molisana">
+      </div>
 
-            <nav>
-                <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Prodotti</a></li>
-                    <li><a href="#">News</a></li>
-                </ul>
-            </nav>
+      <nav>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Prodotti</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section>
+      <div class="container">
+        <h2>Le Lunghe</h2>
+        <div class="boxes">
+          @foreach ($lunga as $pasta)
+          <div class="box">
+            <img src="{{$pasta["src"]}}" alt="{{$pasta["titolo"]}}">
+          </div>
+          @endforeach
         </div>
+      </div>
+    </section>
 
-    </header>
 
-    <main>
+    <section>
+      <div class="container">
+        <h2>Le Corte</h2>
+        <div class="boxes">
+          @foreach ($corta as $pasta)
+          <div class="box">
+            <img src="{{$pasta["src"]}}" alt="{{$pasta["titolo"]}}">
+          </div>
+          @endforeach
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section>
+      <div class="container">
+        <h2>Le Cortissime</h2>
+        <div class="boxes">
+          @foreach ($cortissima as $pasta)
+          <div class="box">
+            <img src="{{$pasta["src"]}}" alt="{{$pasta["titolo"]}}">
+          </div>
+          @endforeach
+        </div>
+      </div>
+    </section>
 
-    <footer>
+  </main>
 
-    </footer>
+  <footer>
+
+  </footer>
 
 </body>
 

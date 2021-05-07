@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -35,4 +38,22 @@ nav ul a {
 nav .active a {
   background-color: #B2E5FC;
   font-weight: 700;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes .box {
+  width: calc((100% / 3) - 20px);
+  margin: 10px;
+}
+.boxes .box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin: 10px;
 }
