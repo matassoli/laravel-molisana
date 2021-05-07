@@ -13,21 +13,22 @@ nav {
         display: flex;
         list-style: none;
         justify-content: center;
+        margin-bottom: 15px;
 
         a {
             color: #000;
-            text-decoration: none;
             font-size: 20px;
-            padding: 15px 5px;
-            margin: 0 10px;
             font-weight: 600;
+            margin: 0 10px;
+            padding: 15px 5px;
+            text-decoration: none;
         }
     }
-    .active {
-      a {
-        background-color: $primaryColor;
-        font-weight: 700;
 
-      }
+    .active {
+        a {
+            background-color: $primaryColor;
+            font-weight: 700;
+        }
     }
 }
