@@ -8,7 +8,7 @@
     }
 }
 
-nav {
+.menu {
     ul {
         display: flex;
         list-style: none;
@@ -30,5 +30,21 @@ nav {
             background-color: $primaryColor;
             font-weight: 700;
         }
+    }
+}
+
+.menu--respo {
+    display: none;
+}
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .menu--respo {
+        display: flex;
+        justify-content: center;
+        color: #000;
+        font-size: 20px;
     }
 }

@@ -28,3 +28,18 @@ main {
         padding-top: 50px;
     }
 }
+@media (max-width: 1000px) {
+    .boxes {
+        .box {
+            width: calc((100% / 2) - 10px);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .boxes {
+        .box {
+            width: calc((100%) - 10px);
+        }
+    }
+}

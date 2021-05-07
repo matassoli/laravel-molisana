@@ -22,13 +22,13 @@ body {
   margin: 20px;
 }
 
-nav ul {
+.menu ul {
   display: flex;
   list-style: none;
   justify-content: center;
   margin-bottom: 15px;
 }
-nav ul a {
+.menu ul a {
   color: #000;
   font-size: 20px;
   font-weight: 600;
@@ -36,11 +36,27 @@ nav ul a {
   padding: 15px 5px;
   text-decoration: none;
 }
-nav .active a {
+.menu .active a {
   background-color: #B2E5FC;
   font-weight: 700;
 }
 
+.menu--respo {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .menu--respo {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 20px;
+  }
+}
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -67,4 +83,15 @@ main h2 {
   font-weight: 600;
   font-size: 28px;
   padding-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .boxes .box {
+    width: calc((100% / 2) - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .boxes .box {
+    width: calc((100%) - 10px);
+  }
 }

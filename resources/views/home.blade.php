@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -19,14 +20,19 @@
         <img src="{{ asset('images/marchio-sito-test.png') }}" alt="Logo La Molisana">
       </div>
 
-      <nav>
+      <nav class="menu">
         <ul>
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Prodotti</a></li>
           <li><a href="#">News</a></li>
         </ul>
       </nav>
+      <nav class="menu--respo">
+        <i class="fas fa-bars"></i>
+      </nav>
     </div>
+
+
 
   </header>
 
@@ -44,7 +50,6 @@
         </div>
       </div>
     </section>
-
 
     <section>
       <div class="container">
