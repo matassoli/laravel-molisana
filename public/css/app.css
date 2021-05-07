@@ -1,1 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+nav ul a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 5px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+nav .active a {
+  background-color: #B2E5FC;
+  font-weight: 700;
+}
