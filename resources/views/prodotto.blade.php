@@ -1,7 +1,7 @@
 @extends("layouts.main")
 
 @section("pageTitle")
-Prodotto - La Molisana
+Prodotto - {{$pasta["titolo"]}}
 @endsection
 
 @section("main")

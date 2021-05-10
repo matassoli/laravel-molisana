@@ -10,7 +10,7 @@ Home - La Molisana
       <h2>Le Lunghe</h2>
       <div class="boxes">
       @foreach ($lunga as $pasta)
-        <a href="{{route("homepage")}}"><div class="box">
+        <a href="{{route("prodotto", ["id" => $pasta["id"] ])}}"><div class="box">
           <img src="{{$pasta["src"]}}" alt="{{$pasta["titolo"]}}">
         </a></div>
       @endforeach
@@ -23,9 +23,9 @@ Home - La Molisana
       <h2>Le Corte</h2>
       <div class="boxes">
         @foreach ($corta as $pasta)
-        <div class="box">
+        <a href="{{route("prodotto", ["id" => $pasta["id"] ])}}"><div class="box">
           <img src="{{$pasta["src"]}}" alt="{{$pasta["titolo"]}}">
-        </div>
+        </a></div>
         @endforeach
       </div>
     </div>
@@ -36,11 +36,11 @@ Home - La Molisana
       <h2>Le Cortissime</h2>
       <div class="boxes">
         @foreach ($cortissima as $pasta)
-        <div class="box">
+        <a href="{{route("prodotto", ["id" => $pasta["id"] ])}}"><div class="box">
           <img src="{{$pasta["src"]}}" alt="{{$pasta["titolo"]}}">
         </div>
         @endforeach
-      </div>
+      </a></div>
     </div>
   </section>
 @endsection
