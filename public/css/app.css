@@ -70,6 +70,9 @@ ul a {
   width: calc((100% / 3) - 10px);
   margin: 5px;
 }
+.boxes .box:last-child {
+  padding-bottom: 50px;
+}
 .boxes .box img {
   display: block;
   width: 100%;
@@ -80,15 +83,13 @@ main {
   background-image: url("../images/fondo-pag-speciali.jpg");
   background-repeat: repeat;
   background-size: contain;
-  padding-bottom: 50px;
 }
 main h2 {
-  margin: 10px;
+  margin: 0 5px;
   color: #002D73;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 28px;
-  padding-top: 50px;
 }
 
 @media (max-width: 1000px) {
@@ -101,6 +102,24 @@ main h2 {
     width: calc((100%) - 10px);
   }
 }
+.prodotto {
+  background-color: #B7DBE7;
+  padding-bottom: 50px;
+}
+.prodotto h1 {
+  font-size: 38px;
+  text-align: center;
+  padding: 50px;
+  color: #002D73;
+}
+.prodotto p {
+  color: #002D73;
+  font-weight: 600;
+}
+.prodotto img {
+  width: 100%;
+}
+
 footer {
   height: 800px;
   padding-top: 50px;

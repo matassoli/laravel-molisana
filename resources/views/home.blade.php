@@ -9,11 +9,11 @@ Home - La Molisana
     <div class="container">
       <h2>Le Lunghe</h2>
       <div class="boxes">
-        @foreach ($lunga as $pasta)
-        <div class="box">
+      @foreach ($lunga as $pasta)
+        <a href="{{route("homepage")}}"><div class="box">
           <img src="{{$pasta["src"]}}" alt="{{$pasta["titolo"]}}">
-        </div>
-        @endforeach
+        </a></div>
+      @endforeach
       </div>
     </div>
   </section>

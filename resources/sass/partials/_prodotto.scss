@@ -1,0 +1,19 @@
+.prodotto {
+    background-color: #B7DBE7;
+    padding-bottom: 50px;
+
+    h1 {
+        font-size: 38px;
+        text-align: center;
+        padding: 50px;
+        color: $txtPrimary;
+    }
+    p {
+      color: $txtPrimary;
+      font-weight: 600;
+    }
+
+    img {
+        width: 100%;
+    }
+}
