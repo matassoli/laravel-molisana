@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get("/", function () {
     $data = [
       [
           "src" => "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -148,4 +148,12 @@ Route::get('/', function () {
           "cortissima" => $cortissima,
       ]
     );
+});
+
+
+
+Route::get("/news", function () {
+
+return view("news");
+
 });
