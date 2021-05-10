@@ -42,7 +42,7 @@ ul a {
   padding: 15px 5px;
 }
 .menu .active a {
-  background-color: #B2E5FC;
+  background-color: #B7DBE7;
   font-weight: 700;
 }
 
@@ -83,6 +83,7 @@ main {
   background-image: url("../images/fondo-pag-speciali.jpg");
   background-repeat: repeat;
   background-size: contain;
+  min-height: 500px;
 }
 main h2 {
   margin: 0 5px;
