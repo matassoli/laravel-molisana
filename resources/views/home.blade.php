@@ -1,5 +1,9 @@
 @extends("layouts.main")
 
+@section("pageTitle")
+Home - La Molisana
+@endsection
+
 @section("main")
   <section>
     <div class="container">

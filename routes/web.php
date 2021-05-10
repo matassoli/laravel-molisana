@@ -148,12 +148,13 @@ Route::get("/", function () {
           "cortissima" => $cortissima,
       ]
     );
-});
-
+}) ->name("homepage");
 
 
 Route::get("/news", function () {
+    return view("news");
+})->name("news");
 
-return view("news");
-
-});
+Route::get("/prodotti", function () {
+    return view("prodotti");
+})->name("prodotti");
