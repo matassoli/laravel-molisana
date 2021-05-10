@@ -7,9 +7,9 @@
 
     <nav class="menu">
       <ul>
-        <li class="active"><a href="{{route("homepage")}}">Home</a></li>
-        <li><a href="{{route("prodotti")}}">Prodotti</a></li>
-        <li><a href="{{route("news")}}">News</a></li>
+        <li class="{{Route::getCurrentRoute()->getName()  == "homepage" ? "active" : "" }}"><a href="{{route("homepage")}}">Home</a></li>
+        <li class="{{Route::getCurrentRoute()->getName()  == "prodotti" || "prodotto" ? "active" : "" }}"><a href="{{route("prodotti")}}">Prodotti</a></li>
+        <li class="{{Route::getCurrentRoute()->getName()  == "news" ? "active" : "" }}"><a href="{{route("news")}}">News</a></li>
       </ul>
     </nav>
     <nav class="menu--respo">
