@@ -1,6 +1,8 @@
 .prodotto {
     background-color: #B7DBE7;
     padding-bottom: 50px;
+    position: relative;
+    text-align: center;
 
     h1 {
         font-size: 38px;
@@ -8,12 +10,38 @@
         padding: 50px;
         color: $txtPrimary;
     }
+
     p {
-      color: $txtPrimary;
-      font-weight: 600;
+        color: $txtPrimary;
+        font-weight: 600;
     }
 
     img {
-        width: 100%;
+        width: 90%;
+    }
+}
+
+.slider {
+    position: absolute;
+    background-color: rgba(#ffffff, 0.6);
+    vertical-align: middle;
+    padding: 10px 6px;
+
+    &--l {
+        left: 0;
+        top: 50%;
+        border-radius: 0 5px 5px 0;
+    }
+
+    &--r {
+        right: 0;
+        top: 50%;
+        border-radius: 5px 0 0 5px;
+    }
+
+    i {
+        font-size: 30px;
+        color: #FFF;
+        vertical-align: middle;
     }
 }

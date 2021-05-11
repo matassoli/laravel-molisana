@@ -131,7 +131,7 @@ Route::get("/prodotti", function () {
     $cortissima = [];
 
     foreach ($data as $key => $pasta) {
-      $pasta["id"] = $key;
+        $pasta["id"] = $key;
         if ($pasta["tipo"] == "lunga") {
             $lunga[] = $pasta;
         } elseif ($pasta["tipo"] == "corta") {
@@ -282,9 +282,28 @@ Route::get("/prodotto/{id}", function ($id) {
         "peso" => "500g",
         "descrizione" => "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
     ]
-  ];
+];
+
+if ($id >= count($data)) {
+  abort(404);
+}
+
+if ($id == count($data) -1 ){
+  $prev = $id - 1;
+  $next = 0;
+} elseif ($id == 0) {
+  $prev = count($data) -1;
+  $next = $id + 1;
+} else {
+  $prev = $id - 1;
+  $next = $id + 1;
+}
+
   $pasta = $data[$id];
+
   return view("prodotto", [
-    "pasta" => $pasta
-  ]);
+    "pasta" => $pasta,
+    "prevId" => $prev,
+    "nextId" => $next,
+]);
 })->name("prodotto")->where('id', '[0-9]+');

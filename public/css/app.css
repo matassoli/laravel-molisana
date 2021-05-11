@@ -106,6 +106,8 @@ main h2 {
 .prodotto {
   background-color: #B7DBE7;
   padding-bottom: 50px;
+  position: relative;
+  text-align: center;
 }
 .prodotto h1 {
   font-size: 38px;
@@ -118,7 +120,29 @@ main h2 {
   font-weight: 600;
 }
 .prodotto img {
-  width: 100%;
+  width: 90%;
+}
+
+.slider {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  vertical-align: middle;
+  padding: 10px 6px;
+}
+.slider--l {
+  left: 0;
+  top: 50%;
+  border-radius: 0 5px 5px 0;
+}
+.slider--r {
+  right: 0;
+  top: 50%;
+  border-radius: 5px 0 0 5px;
+}
+.slider i {
+  font-size: 30px;
+  color: #FFF;
+  vertical-align: middle;
 }
 
 footer {
